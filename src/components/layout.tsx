@@ -1,13 +1,17 @@
 "use client";
-import { PropsWithChildren } from "react";
-import LazyAppProviders from "./LazyAppProviders";
+import { type PropsWithChildren } from "react";
+import { LazyAppProviders } from "./LazyAppProviders";
 
-export default function Layout({ children }: PropsWithChildren) {
+export default function RootLayout({ children } : PropsWithChildren) {
   return (
     <>
-      <LazyAppProviders>
-        <main>{children}</main>
-      </LazyAppProviders>
+      <html lang="en">
+        <body className={"antialiased"}>
+          <LazyAppProviders licenseKey="your-license-key">
+            <main>{children}</main>
+          </LazyAppProviders>
+        </body>
+      </html>
     </>
   );
 }

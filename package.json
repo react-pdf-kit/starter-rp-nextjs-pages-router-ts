@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@pdf-viewer/react": "0.0.0-experimental.0",
+    "@pdf-viewer/react": "latest",
     "next": "15.5.2",
     "react": "19.1.0",
     "react-dom": "19.1.0"
